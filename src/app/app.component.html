@@ -1,0 +1,11 @@
+<div>
+  <fm-pivot #pivot [toolbar]="true" [shareReportConnection]="{url: 'https://olap.flexmonster.com:9500'}"
+      [report]="pivotReport" [height]="600"
+      [licenseFilePath]="'https://cdn.flexmonster.com/jsfiddle.charts.key'" (reportcomplete)="onReportComplete()">
+  </fm-pivot>
+</div>
+
+<div class="chart-container">
+  <div id="highcharts-container"></div>
+</div>
+
